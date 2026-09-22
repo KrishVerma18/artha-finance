@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <defs>
+    <linearGradient id="arthaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#10b981" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <rect width="48" height="48" rx="12" fill="#090d16"/>
+  <path d="M24 10 L34 28 L28 28 L24 20 L20 28 L14 28 Z" fill="url(#arthaGrad)" filter="url(#glow)"/>
+  <circle cx="24" cy="34" r="3.5" fill="#10b981"/>
+</svg>
