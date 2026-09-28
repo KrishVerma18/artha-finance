@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Artha Finance</title>
+    <script>
+      // Single Page Apps for GitHub Pages
+      // Redirects 404s on subpaths back to the HashRouter entry
+      var path = window.location.pathname;
+      var repo = '/artha-finance';
+      var subpath = path.startsWith(repo) ? path.slice(repo.length) : path;
+      if (subpath.startsWith('/')) {
+        subpath = subpath.slice(1);
+      }
+      var target = repo + '/#/' + subpath + window.location.search + window.location.hash;
+      window.location.replace(target);
+    </script>
+  </head>
+  <body>
+    <p>Redirecting to Artha Finance...</p>
+  </body>
+</html>

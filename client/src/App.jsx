@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { ThemeProvider } from './context/ThemeContext';
 import { I18nProvider } from './context/I18nContext';
 import { ToastProvider } from './context/ToastContext';
@@ -164,9 +164,9 @@ export default function App() {
       <I18nProvider>
         <ToastProvider>
           <AuthProvider>
-            <BrowserRouter>
+            <HashRouter>
               <MainLayout />
-            </BrowserRouter>
+            </HashRouter>
           </AuthProvider>
         </ToastProvider>
       </I18nProvider>
